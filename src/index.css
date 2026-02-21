@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Neomorphism Light Theme */
+    --background: 210 20% 93%; /* #EBECF0 - Soft Gray */
+    --foreground: 210 10% 20%; /* #323232 - Dark Gray */
+
+    --card: 210 20% 93%;
+    --card-foreground: 210 10% 20%;
+
+    --popover: 210 20% 93%;
+    --popover-foreground: 210 10% 20%;
+
+    --primary: 186 78% 45%; /* #199EB3 - Darker Cyan for contrast */
+    --primary-foreground: 210 20% 93%;
+
+    --secondary: 210 20% 88%;
+    --secondary-foreground: 210 10% 20%;
+
+    --muted: 210 20% 88%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 235 86% 65%; /* #6366F1 - Soft Indigo */
+    --accent-foreground: 210 20% 93%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 20% 93%;
+
+    --border: 210 20% 85%;
+    --input: 210 20% 93%;
+    --ring: 186 78% 45%;
+
+    --radius: 1rem;
+
+    --sidebar-background: 210 20% 93%;
+    --sidebar-foreground: 210 10% 20%;
+    --sidebar-primary: 186 78% 45%;
+    --sidebar-primary-foreground: 210 20% 93%;
+    --sidebar-accent: 235 86% 65%;
+    --sidebar-accent-foreground: 210 20% 93%;
+    --sidebar-border: 210 20% 85%;
+    --sidebar-ring: 186 78% 45%;
+
+    --font-heading: 'Space Grotesk', system-ui, sans-serif;
+    --font-sans: 'Inter', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+    /* Neomorphic Shadows */
+    --shadow-neo-flat: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    --shadow-neo-pressed: inset 3px 3px 6px #c5c5c5, inset -3px -3px 6px #ffffff;
+    --shadow-neo-convex: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    --shadow-neo-concave: inset 6px 6px 12px #c5c5c5, inset -6px -6px 12px #ffffff;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased text-[1.125rem] leading-relaxed selection:bg-primary/30 selection:text-primary-foreground;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
+  }
+}
+
+@layer components {
+  /* Neomorphism Utilities */
+  .neo-flat {
+    background: linear-gradient(145deg, #ffffff, #d4d5d9);
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    @apply border-none;
+  }
+
+  .neo-pressed {
+    background: #EBECF0;
+    box-shadow: inset 3px 3px 6px #c5c5c5, inset -3px -3px 6px #ffffff;
+    @apply border-none;
+  }
+
+  .neo-convex {
+    background: linear-gradient(145deg, #ffffff, #d4d5d9);
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    @apply rounded-xl border-none;
+  }
+
+  .neo-concave {
+    background: linear-gradient(145deg, #d4d5d9, #ffffff);
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    @apply rounded-xl border-none;
+  }
+  
+  .neo-card {
+    @apply bg-background rounded-2xl;
+    box-shadow: 8px 8px 16px #c5c5c5, -8px -8px 16px #ffffff;
+  }
+
+  .neo-btn {
+    @apply px-6 py-3 rounded-xl bg-background text-foreground font-semibold transition-all duration-300 active:scale-95;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  }
+  
+  .neo-btn:hover {
+    box-shadow: 8px 8px 16px #c5c5c5, -8px -8px 16px #ffffff;
+    transform: translateY(-2px);
+  }
+
+  .neo-btn:active {
+    box-shadow: inset 2px 2px 5px #c5c5c5, inset -2px -2px 5px #ffffff;
+    transform: translateY(0) scale(0.98);
+  }
+
+  .neo-btn-primary {
+    @apply bg-primary text-primary-foreground;
+    background: linear-gradient(145deg, #199EB3, #15889a);
+    box-shadow: 6px 6px 12px #a3b1b1, -6px -6px 12px #ffffff;
+  }
+  
+  .neo-btn-primary:active {
+    background: #199EB3;
+    box-shadow: inset 3px 3px 6px #127585, inset -3px -3px 6px #20c7e1;
+    transform: scale(0.98);
+  }
+
+  .neo-input {
+    @apply bg-background rounded-xl px-4 py-3 outline-none transition-all duration-300 focus:text-primary;
+    box-shadow: inset 5px 5px 10px #c5c5c5, inset -5px -5px 10px #ffffff;
+  }
+  
+  .neo-input:focus {
+     box-shadow: inset 8px 8px 16px #c5c5c5, inset -8px -8px 16px #ffffff;
+  }
+
+  /* Text Gradients */
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
+  }
+}
