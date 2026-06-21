@@ -122,7 +122,7 @@ const HeroSection = memo(() => {
             className="flex items-center justify-center gap-6 mb-12"
           >
             <motion.a
-              href="https://github.com/Inshal-Amir"
+              href="https://github.com/Areeba-00"
               target="_blank"
               rel="noopener noreferrer"
               className="p-4 rounded-full neo-flat text-muted-foreground hover:text-primary transition-all duration-300"
@@ -132,7 +132,7 @@ const HeroSection = memo(() => {
               <Github className="w-6 h-6" />
             </motion.a>
             <motion.a
-              href="https://www.linkedin.com/in/inshal-amir/"
+              href="https://www.linkedin.com/in/areeba-akhtar-58b004334/?skipRedirect=true"
               target="_blank"
               rel="noopener noreferrer"
               className="p-4 rounded-full neo-flat text-muted-foreground hover:text-[#0077b5] transition-all duration-300"
@@ -142,7 +142,7 @@ const HeroSection = memo(() => {
               <Linkedin className="w-6 h-6" />
             </motion.a>
             <motion.a
-              href="mailto:inshalamir00@gmail.com"
+              href="mailto:beba128242005@gmail.com"
               className="p-4 rounded-full neo-flat text-muted-foreground hover:text-[#ea4335] transition-all duration-300"
               whileHover={{ scale: 1.1, y: -2 }}
               whileTap={{ scale: 0.95 }}
