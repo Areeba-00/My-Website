@@ -77,7 +77,7 @@ const Navbar = () => {
             }}
             className="text-2xl font-bold text-primary font-mono tracking-tighter"
           >
-            IA.
+            AA.
           </a>
 
           {/* Desktop Navigation */}

@@ -47,13 +47,13 @@ export interface ContactForm {
 // Fallback data for when Supabase is not connected
 export const fallbackAboutMe: AboutMe = {
   id: 1,
-  name: "Inshal Amir",
+  name: "Areeba Akhtar",
   description:
     "Passionate AI enthusiast with expertise in machine learning, deep learning, and full-stack development. I specialize in building intelligent systems that solve real-world problems.",
   studies:
-    "Bachelor of Science in Computer Science - Specialization in Artificial Intelligence",
+    "Bachelor of Science in Artificial Intelligence",
   work_experience:
-    "Senior AI Engineer at Tech Innovation Labs (2022-Present)\nFull Stack Developer at Digital Solutions Inc (2020-2021)",
+    "Junior AI Content Operations Associate at N2L (2024-Present)\nInternship at NeuroAGI (June 2025-Sep 2025)",
   other_details: "Available Worldwide",
   cv_link: null,
 };

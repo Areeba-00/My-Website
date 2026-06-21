@@ -24,7 +24,7 @@ const Footer = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            &lt;IA /&gt;
+            &lt;AA /&gt;
           </motion.a>
 
           {/* Social Links */}
@@ -63,7 +63,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="text-center text-sm text-muted-foreground">
             <p className="flex items-center justify-center gap-1">
-              Made by Inshal Amir
+              Made by Areeba Akhtar
             </p>
             <p className="mt-1">
               © {currentYear} All rights reserved.
